@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>École Numérique — Gestion d'école primaire (Burkina Faso)</title>
+<meta name="description" content="Application de gestion complète d'une école primaire publique du Burkina Faso : élèves, classes, enseignants, présences, évaluations, cotisations, fournitures, cantine et administration.">
+<meta name="theme-color" content="#0B2431">
+<link rel="manifest" href="manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" type="image/svg+xml" href="icons/icon.svg">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+<!-- Bibliothèque Supabase : copie locale (vendor/supabase.js, facultative) puis plusieurs miroirs, au cas où un réseau bloque un des hébergeurs -->
+<script src="vendor/supabase.js"></script>
+<script>window.supabase||document.write('<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"><\/script>');</script>
+<script>window.supabase||document.write('<script src="https://fastly.jsdelivr.net/npm/@supabase/supabase-js@2"><\/script>');</script>
+<script>window.supabase||document.write('<script src="https://gcore.jsdelivr.net/npm/@supabase/supabase-js@2"><\/script>');</script>
+<script>window.supabase||document.write('<script src="https://unpkg.com/@supabase/supabase-js@2/dist/umd/supabase.js"><\/script>');</script>
+</head>
+<body>
+  <div class="boot"><span class="spinner"></span>Chargement de l'application…</div>
+
+  <script src="db.js"></script>
+  <script src="supabase-sync.js"></script>
+  <script src="app-core.js"></script>
+  <script src="app-crud.js"></script>
+  <script src="app-people.js"></script>
+  <script src="app-fiche-scolarite.js"></script>
+  <script src="app-pedagogie.js"></script>
+  <script src="app-registre.js"></script>
+  <script src="app-registre-matricule.js"></script>
+  <script src="app-courrier.js"></script>
+  <script src="app-gestion.js"></script>
+  <script src="app-patrimoine.js"></script>
+  <script src="app-admin.js"></script>
+  <script src="app-cahier-bord.js"></script>
+  <script src="app-cahier-enseignant.js"></script>
+  <script src="app-cahier-sync.js"></script>
+  <script src="app-cahier-semaine.js"></script>
+  <script src="app-print-a4.js"></script>
+  <script src="app-pdf.js"></script>
+  <script src="app-word.js"></script>
+  <script src="app-parents.js"></script>
+  <script src="app-examens-calcul.js"></script>
+  <script src="app-examens.js"></script>
+  <script src="app-examens-correction.js"></script>
+  <script src="app-examens-docs.js"></script>
+  <script src="app-examens-remontee.js"></script>
+  <script src="app-examens-circuit.js"></script>
+  <script src="app-reseau.js"></script>
+  <script src="app-listes-ceb.js"></script>
+  <script src="app-cep-core.js"></script>
+  <script src="app-cep-tableaux.js"></script>
+  <script src="app-cep-calendrier.js"></script>
+  <script src="app-cep-validation.js"></script>
+  <script src="app-cep-jourj.js"></script>
+  <script src="app-personnel-reseau.js"></script>
+  <script src="app-matricules-cep.js"></script>
+  <script src="app-scanner.js"></script>
+  <script src="app-bureaux.js"></script>
+  <script src="app-services.js"></script>
+  <script src="app-cantine-rations.js"></script>
+  <script src="app-ui.js"></script>
+</body>
+</html>
