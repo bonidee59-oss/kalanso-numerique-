@@ -1,0 +1,35 @@
+{
+  "name": "ecole-numerique",
+  "version": "55.0.0",
+  "description": "École Numérique — gestion d'école primaire du Burkina Faso (application Windows)",
+  "author": "École Numérique",
+  "private": true,
+  "main": "electron/main.js",
+  "scripts": {
+    "test": "node tests/cep.test.js && node tests/personnel.test.js && node tests/services.test.js && node tests/word.test.js && node tests/sync.test.js && node tests/matricules.test.js && node tests/scanner.test.js && node tests/chemin.test.js",
+    "start": "electron .",
+    "build:win": "electron-builder --win --publish never"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "bf.ecolenumerique.app",
+    "productName": "École Numérique",
+    "directories": { "output": "dist" },
+    "files": ["electron/**/*", "www/**/*", "package.json"],
+    "win": {
+      "target": ["nsis", "portable"],
+      "icon": "www/icons/icon-512.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "artifactName": "EcoleNumerique-Setup-${version}.${ext}"
+    },
+    "portable": {
+      "artifactName": "EcoleNumerique-Portable-${version}.${ext}"
+    }
+  }
+}

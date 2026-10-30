@@ -1,0 +1,11 @@
+{
+  "name": "ecole-numerique-android",
+  "version": "55.0.0",
+  "private": true,
+  "description": "Enveloppe Android (Capacitor) de l'application École Numérique",
+  "dependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/cli": "^6.2.0",
+    "@capacitor/core": "^6.2.0"
+  }
+}

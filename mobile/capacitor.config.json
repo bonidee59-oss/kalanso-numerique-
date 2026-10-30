@@ -1,0 +1,6 @@
+{
+  "appId": "bf.ecolenumerique.app",
+  "appName": "École Numérique",
+  "webDir": "www",
+  "server": { "androidScheme": "https" }
+}
